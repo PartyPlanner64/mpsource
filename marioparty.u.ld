@@ -294,6 +294,8 @@ SECTIONS
    .ov054 0x800F65E0 : AT(rom_pos)
    {
       build/asm/overlays/ov054.o(.text);
+      build/asm/overlays/ov054.o(.rodata);
+      build/asm/overlays/ov054.o(.bss);
    }
    rom_pos += SIZEOF(.ov054);
    .ov055 0x800F65E0 : AT(rom_pos)
